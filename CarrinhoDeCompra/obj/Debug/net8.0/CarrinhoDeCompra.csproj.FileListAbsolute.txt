@@ -166,3 +166,4 @@ C:\Users\Arthur Cruz\source\repos\CarrinhoDeCompra\CarrinhoDeCompra\bin\Debug\ne
 C:\Users\Arthur Cruz\source\repos\CarrinhoDeCompra\CarrinhoDeCompra\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Arthur Cruz\source\repos\CarrinhoDeCompra\CarrinhoDeCompra\obj\Debug\net8.0\CarrinhoDeCompra.csproj.AssemblyReference.cache
 C:\Users\Arthur Cruz\source\repos\CarrinhoDeCompra\CarrinhoDeCompra\obj\Debug\net8.0\Carrinho.0C5FE06C.Up2Date
+C:\Users\Arthur Cruz\source\repos\CarrinhoDeCompra\CarrinhoDeCompra\obj\Debug\net8.0\CarrinhoDeCompra.sourcelink.json

@@ -21,6 +21,7 @@ namespace CarrinhoDeCompra.Controllers
                             group new { a, p } by a.CdProduto into grouped
                             select new ResourceCarrinho
                             {
+                                CdProduto = grouped.FirstOrDefault().p.CdProduto,
                                 NmProduto = grouped.FirstOrDefault().p.NmProduto, 
                                 Quantidade = grouped.Count(),                    
                                 Preco = grouped.FirstOrDefault().p.Preco,
@@ -31,6 +32,26 @@ namespace CarrinhoDeCompra.Controllers
             ViewBag.PrecoTotal = carrinho.Sum(item => item.Preco * item.Quantidade);
             ViewBag.PrecoTotalFinal = carrinho.Sum(item => item.Preco * item.Quantidade) + 20;
             return View(carrinho);
+        }
+
+        public JsonResult RemoverProduto(int CdProduto = 0)
+        {
+            try
+            {
+                if (CdProduto == 0) return Json(new { success = false, message = "Código inválido" });
+
+                var carrinhoProduto = (from a in db.CadCarrinhoProdutos
+                                       where a.CdProduto == CdProduto
+                                       select a).FirstOrDefault();
+
+                db.CadCarrinhoProdutos.Remove(carrinhoProduto);
+                db.SaveChanges();
+                return Json(new { success = true, message = "Removido com sucesso" });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "erro: " + ex.Message });
+            }
         }
 
     }

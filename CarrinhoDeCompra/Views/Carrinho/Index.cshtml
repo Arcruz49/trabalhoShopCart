@@ -29,31 +29,32 @@
                                     </div>
                                 </div>
 
-                                @foreach (var item in Model)
-                                {
-                                    <div class="card mb-3">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div>
-                                                    <img src="@item.Caminho"
-                                                             class="img-fluid rounded-3" alt="Product image" style="width: 65px;">
-                                                    </div>
-                                                    <div class="ms-3">
-                                                        <h5>@item.NmProduto</h5>
-                                                        <p class="small mb-0">Quantity: @item.Quantidade</p>
-                                                    </div>
+                            @foreach (var item in Model)
+                            {
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <div>
+                                                    <img src="@item.Caminho" class="img-fluid rounded-3" alt="Product image" style="width: 65px;">
                                                 </div>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div style="width: 80px;">
-                                                        <h5 class="mb-0">@(item.Preco?.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("en-US")) ?? "$0.00")</h5>
-                                                    </div>
-                                                    <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                                                <div class="ms-3">
+                                                    <h5>@item.NmProduto</h5>
+                                                    <p class="small mb-0">Quantity: @item.Quantidade</p>
                                                 </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <div style="width: 80px;">
+                                                    <h5 class="mb-0">@(item.Preco?.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("en-US")) ?? "$0.00")</h5>
+                                                </div>
+                                                <!-- Botão de Remoção -->
+                                                <button class="btn btn-danger btn-sm" onclick="removerProduto(@item.CdProduto)">Remove</button>
                                             </div>
                                         </div>
                                     </div>
-                                }
+                                </div>
+                            }
+
 
                             </div>
                             <div class="col-lg-5">
@@ -154,3 +155,36 @@ height: 100vh !important;
 }
 }
 </style>
+
+
+<script>
+    function removerProduto(CdProduto) {
+        $.ajax({
+            url: '/Carrinho/RemoverProduto',
+            type: 'POST',
+            data: { CdProduto: CdProduto },
+            success: function (response) {
+                if (response.success) {
+                    
+                    location.reload();
+
+                } else {
+                    Swal.fire({
+                        title: 'Erro',
+                        text: `Erro: ${response.message}`,
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                }
+            },
+            error: function () {
+                Swal.fire({
+                    title: 'Erro',
+                    text: 'Ocorreu um erro ao adicionar o produto ao carrinho.',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                });
+            }
+        });
+    }
+</script>
