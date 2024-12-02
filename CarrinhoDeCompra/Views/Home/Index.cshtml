@@ -1,0 +1,167 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<CarrinhoDeCompra.Models.CadProduto>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<div class="items">
+    @foreach (var produto in Model)
+    {
+        <div data-price="@produto.Preco" class="item">
+            <div class="image-container">
+                <img src="@produto.Caminho" alt="@produto.NmProduto" class="img-item" style="width: 150px; height: 150px;">
+            </div>
+            <div class="info">
+                <h3 style="display:none">@produto.CdProduto</h3>
+                <h3>@produto.NmProduto</h3>
+                <h5>@(produto.Preco?.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("en-US")) ?? "$0.00")</h5>
+            </div>
+            <button class="add-to-cart" onclick="AdicionaNoCarrinho(@produto.CdProduto)">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+    }
+</div>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+
+    .info .description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        flex-grow: 1; 
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .item {
+        position: relative;
+        width: 200px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 300px; 
+    }
+
+
+    .img-item {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+
+    h5 {
+        font-size: 18px;
+        color: #28a745;
+        margin: 0;
+        margin-top: auto; 
+    }
+
+    .add-to-cart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 123, 255, 0.7);
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 24px;
+        display: none;
+    }
+
+    .item:hover .add-to-cart {
+        display: block;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .img-item {
+        width: 150px;
+        height: 150px;
+    }
+
+</style>
+
+<script>
+    function AdicionaNoCarrinho(cdProduto) {
+        $.ajax({
+            url: '/Home/AdicionaProdutoCarrinho',
+            type: 'POST',
+            data: { cdProduto: cdProduto },
+            success: function (response) {
+                if (response.success) {
+                    Swal.fire({
+                        title: 'Produto Adicionado!',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Erro',
+                        text: `Erro: ${response.message}`,
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                }
+            },
+            error: function () {
+                Swal.fire({
+                    title: 'Erro',
+                    text: 'Ocorreu um erro ao adicionar o produto ao carrinho.',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                });
+            }
+        });
+    }
+
+
+
+
+</script>

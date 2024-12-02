@@ -1,0 +1,29 @@
+CREATE TABLE cadProdutos(
+cdProduto int PrimaRY KEY IDENTITY(1,1),
+nmProduto VARCHAR(256),
+preco NUMERIC(8,2),
+caminho varchar(256)
+)
+
+CREATE TABLE cadCarrinho_Produtos (
+    cdCarrinho INT PRIMARY KEY IDENTITY(1,1),
+    cdProduto INT,
+    CONSTRAINT FK_cadCarrinho_Produtos_cdProduto FOREIGN KEY (cdProduto) REFERENCES cadProdutos(cdProduto)
+);
+
+INSERT INTO cadProdutos (nmProduto, preco, caminho) VALUES
+('sabão macaco', 12.99, 'images/mamaco.png'),
+('Boneco Max Steel Missão Secreta Mattel HCL36', 89.99, 'images/maxsteel.png'),
+('Hot Wheels City Shark Chomp Transporter', 159.99, 'images/hotwheels.png'),
+('Kit De Constução Ninjago 71767 Templo De Dojo Ninja Com 1394 Peças Lego', 349.99, 'images/ninjago.png'),
+('Placa gráfica NVIDIA GeForce RTX 4090 Founders Edition VIPERA', 7999.99, 'images/rtx.png'),
+('ABAPORU', 150.00, 'images/abaporu.png'),
+('Turbina APL240 .42 - ZR Turbo', 499.99, 'images/Turbina.png'),
+('Corsa rebaixado', 22000.00, 'images/corsa.png'),
+('The Worst Red Tiger (Scum Squad) 3 3/4-Inch ReAction Figure', 29.99, 'images/t.txt'),
+('gato rebaixado', 99.99, 'images/gato.png'),
+('foice e martelo', 40.00, 'images/foice.png'),
+('yugoslavia', 10.00, 'images/yugoslavia.png'),
+('barbasol 9 in 1', 12.00, 'images/barbasol.png'),
+('perfume wd-40', 100.00, 'images/wd40.png');
+

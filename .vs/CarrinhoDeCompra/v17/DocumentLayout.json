@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\views\\carrinho\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\views\\carrinho\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\models\\resource\\resourcecarrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\models\\resource\\resourcecarrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|c:\\users\\arthur cruz\\source\\repos\\carrinhodecompra\\carrinhodecompra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0360361C-B3AA-414D-8A08-F4A010A80078}|CarrinhoDeCompra\\CarrinhoDeCompra.csproj|solutionrelative:carrinhodecompra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarrinhoController.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Controllers\\CarrinhoController.cs",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Controllers\\CarrinhoController.cs",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Controllers\\CarrinhoController.cs",
+              "RelativeToolTip": "CarrinhoDeCompra\\Controllers\\CarrinhoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:46:38.575Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Carrinho\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Views\\Carrinho\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Carrinho\\Index.cshtml",
+              "RelativeToolTip": "CarrinhoDeCompra\\Views\\Carrinho\\Index.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T00:47:04.62Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResourceCarrinho.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Models\\Resource\\ResourceCarrinho.cs",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Models\\Resource\\ResourceCarrinho.cs",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Models\\Resource\\ResourceCarrinho.cs",
+              "RelativeToolTip": "CarrinhoDeCompra\\Models\\Resource\\ResourceCarrinho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T01:08:30.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarrinhoDeCompra\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T00:57:55.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CarrinhoDeCompra\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:19:57.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarrinhoDeCompra\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Arthur Cruz\\source\\repos\\CarrinhoDeCompra\\CarrinhoDeCompra\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarrinhoDeCompra\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAkwJIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T23:57:09.021Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
